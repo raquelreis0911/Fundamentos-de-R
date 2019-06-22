@@ -55,20 +55,21 @@ Em Install Packages altere Install from: para 'Package Archive File'. Localize o
 Siga os passos em: https://www.vivaolinux.com.br/dica/Instalando-o-R-e-Rstudio-no-Ubuntu
 
 
-##Modificar o repositório/ Como selecionar um CRAN mirror:
+## Modificar o repositório/ Como selecionar um CRAN mirror:
 
 local({r <- getOption("repos")
 r["CRAN"] <- "https://vps.fmvz.usp.br/CRAN/" 
 options(repos=r)
 })
+
+## Para ver o repositório
 getOption("repos")
 
 ##Fonte do código: https://stackoverflow.com/questions/11488174/how-to-select-a-cran-mirror-in-r
 
 ##Faça o teste tentando baixar um pacote:
 
-install.packages("tidyverse",
-                 repos = "https://vps.fmvz.usp.br/CRAN/")
+install.packages("tidyverse")
 
 Para mais: https://github.com/fernandomayer/R-pacotes-rautu/blob/master/R_gerenciamento_de_pacotes.md#selecionando-um-reposit%C3%B3rio
 
