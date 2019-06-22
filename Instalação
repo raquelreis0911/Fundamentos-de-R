@@ -1,7 +1,11 @@
 Instale o R. Download em: https://cran.r-project.org/
 Instale o R Studio. Download em: https://www.rstudio.com/products/rstudio/download/
 
-INTERFACE
+::::NO LINUX/UBUNTU::::
+
+Siga os passos em: https://www.vivaolinux.com.br/dica/Instalando-o-R-e-Rstudio-no-Ubuntu
+
+::::INTERFACE::::
 
 Script: área para digitar os scripts livremente. CLique em 'run' para executar.
 
@@ -14,7 +18,7 @@ Guia 'Help'
 Guia 'Environment': mostra todos os objetos carregado em memória. 
 Guia 'History': Mostra os códigos que já foram executados. 
 
-PACKAGES
+::::PACKAGES::::
 
 Implementam funções. Há uma gama de funcionalidades muito grandes. Por exemplo, é possível implementar um package da área de Machine Learning.
 É possível que exista dependências entre os pacotes. Por exemplo: pacotes de visualização como ggplot e ggplot2.
@@ -48,12 +52,6 @@ install.packages("nome_do_pacote", dependencies = TRUE)
 Localize o pacote no CRAN. Faça o download dos binários conforme o sistema operacional (OS X binaries).
 Abra o R Studio > Tools > Install Packages (na barra superior)
 Em Install Packages altere Install from: para 'Package Archive File'. Localize o arquivo.
-
-
-::::NO LINUX/UBUNTU::::
-
-Siga os passos em: https://www.vivaolinux.com.br/dica/Instalando-o-R-e-Rstudio-no-Ubuntu
-
 
 ## Modificar o repositório/ Como selecionar um CRAN mirror:
 
