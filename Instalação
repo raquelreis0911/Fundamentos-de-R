@@ -1,0 +1,95 @@
+Instale o R. Download em: https://cran.r-project.org/
+Instale o R Studio. Download em: https://www.rstudio.com/products/rstudio/download/
+
+INTERFACE
+
+Script: área para digitar os scripts livremente. CLique em 'run' para executar.
+
+Console: Onde aparece a saída do script. 
+
+Guia 'Plots': visualização dos gráficos. Navega entre os gráficos gerados. É possível exportar os gráficos nesta guia.
+Guia 'Packages': instala pacotes com diversas funções. Realiza o gerenciamentos dos pacotes. 
+Guia 'Help'
+
+Guia 'Environment': mostra todos os objetos carregado em memória. 
+Guia 'History': Mostra os códigos que já foram executados. 
+
+PACKAGES
+
+Implementam funções. Há uma gama de funcionalidades muito grandes. Por exemplo, é possível implementar um package da área de Machine Learning.
+É possível que exista dependências entre os pacotes. Por exemplo: pacotes de visualização como ggplot e ggplot2.
+
+Alguns exemplos de temas:
+- para séries temporais;
+- para gráficos;
+- para machine learning;
+- para distribuições e probabilidade;
+- para finanças;
+- para genética, etc.
+
+Os pacotes mais populares são:
+  - Dplyr: para manipulação de dados;
+  - Devtools: para desenvolvimento e criação de outros pacotes;
+  - Foreign: para importar dados de outras ferramentas como SAS, SPSS, etc.);
+  - Ggplot: para visualização de dados.
+
+Todos os pacotes estão disponíveis no CRAN (vá em Packages): https://cran.r-project.org/ 
+
+Como instalar os packages?
+
+1. Instalação por linha de comando: 
+
+Digite o código: 
+
+install.packages("nome_do_pacote", dependencies = TRUE)
+
+2. Instalação manual:
+
+Localize o pacote no CRAN. Faça o download dos binários conforme o sistema operacional (OS X binaries).
+Abra o R Studio > Tools > Install Packages (na barra superior)
+Em Install Packages altere Install from: para 'Package Archive File'. Localize o arquivo.
+
+
+::::NO LINUX/UBUNTU::::
+
+Siga os passos em: https://www.vivaolinux.com.br/dica/Instalando-o-R-e-Rstudio-no-Ubuntu
+
+
+##Modificar o repositório/ Como selecionar um CRAN mirror:
+
+local({r <- getOption("repos")
+r["CRAN"] <- "https://vps.fmvz.usp.br/CRAN/" 
+options(repos=r)
+})
+getOption("repos")
+
+##Fonte do código: https://stackoverflow.com/questions/11488174/how-to-select-a-cran-mirror-in-r
+
+##Faça o teste tentando baixar um pacote:
+
+install.packages("tidyverse",
+                 repos = "https://vps.fmvz.usp.br/CRAN/")
+
+Para mais: https://github.com/fernandomayer/R-pacotes-rautu/blob/master/R_gerenciamento_de_pacotes.md#selecionando-um-reposit%C3%B3rio
+
+3. Para carregar o pacote:
+
+library(nome_do_pacote)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
