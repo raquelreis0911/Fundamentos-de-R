@@ -1,0 +1,157 @@
+::::DIRETÓRIO DE TRABALHO::::
+
+Diretório de trabalho: local onde, por padrão, o R busca arquivos informados no comando. Ideal para não precisar informar
+caminhos absolutos. 
+
+##Para saber qual o diretório padrão do R atualmente:
+
+getwd()
+
+##Para alterar o diretório padrão:
+
+setwd("c:\\dados")
+
+##Encerrando o R e salvando na memória o workplace:
+
+quit()
+
+::::SALVANDO E CARREGANDO::::
+
+save(objetos, file = "arquivo.Rdata")
+
+load(file="arquivo.Rdata")
+
+##Se não tiver no diretório padrão do R, vai ser necessário inserir o caminho absoluto.
+
+::::CLASSE::::
+
+##Para saber a classe dos objetos:
+
+class(iris)
+[1] "data.frame"
+
+class(1)
+[1] "numeric"
+
+::::TIPOS DE DADOS::::
+
+1. Caractere
+2. Numérico
+3. Inteiro
+4. Fator
+
+::::ATRIBUIÇÃO DE VALOR:::
+
+delta = 8
+
+delta <- 8
+[1] "numeric"
+
+##Para atribuir um número inteiro, é preciso colocar o 'L' maiúsculo após o valor. Senão, o R atribui como número real (numeric).
+
+delta = 8L
+[1] "integer"
+
+::::PRINCIPAIS OPERADORES::::
+
+Operadores aritméticos:
+
+Soma: +
+Subtração: -
+Multiplicação: *
+Divisão: /
+Divisão de inteiros: %/%
+Potência: ^
+Modo: %%
+
+2. Operadores lógicos:
+
+Maior: >
+Menor: <
+Maior ou igual: >=
+Menor ou igual: <=
+Igual: ==
+Diferente: !=
+Not: !
+Or: |
+And: &
+
+3. Funções matemáticas mais comuns
+
+Valor absoluto: abs
+Raiz quadrada: sqtr
+Soma: sum
+Logaritmo de base 10: log
+Cosseno: cos
+Seno: sin
+Tangente: tan
+Exponencial: exp
+
+::::VETORES::::
+
+##Atenção ao 'c' de combine! 
+
+X <- c(1, 2, 3, 4, 5, 6)
+
+##Criamos um vetor de 6 posições
+
+##Para ler todo o vetor
+
+X
+
+##Para ler a posição de um vetor
+
+X[1]
+
+##Para atribuir um valor a qualquer posição do vetor
+
+X[1] <- 10
+
+::::MATRIZES::::
+
+As matrizes combinam duas dimensões (linhas e colunas). É semelhante a uma tabela.
+As linhas e colunas podem ter nomes.
+Contudo, todos os dados de uma matriz são do mesmo tipo (por exemplo, apenas tipo numéricos).
+
+##Para ler uma posição de uma matriz:
+Por exemplo, para ler a linha 1 na coluna 3 em uma matriz chamada volcano
+
+volcano [1, 3]
+
+##Ou seja, a posição fixa é sempre [linha, coluna]
+
+::::DATA FRAME::::
+
+Os data frame são semelhantes a matrizes, porém permitem tipos de dados diferentes por coluna.
+Assim, como as matrizes possuem duas dimensões (mais próximo a uma tabela de banco de dados) e linhas/colunas podem ser nomeadas.
+
+##Para acessar uma coluna:
+
+dataframe$coluna
+
+::::LISTAS::::
+
+N objetos diferentes, em sequência, de classes diferentes. É como a linha de um banco de dados.
+Pode abrigar, inclusive, data frames dentro de si.
+
+::::FATORES::::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
