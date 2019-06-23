@@ -179,7 +179,9 @@ install.packages("xlsx")
 library(xlsx)
 nome_do_dataframe <- read.xlsx(file.choose(), sheetIndex =1)
 
-
+install.packages("foreign")
+library(foreign)
+nome_do_dataframe <- read.arff(file.choose())
 
 
 
