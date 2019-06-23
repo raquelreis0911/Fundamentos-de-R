@@ -83,13 +83,11 @@ library(nome_do_pacote)
 
 4. Em resumo:
 
-install.packages("nome_do_pacote")
+install.packages("nome_do_pacote", dependences = TRUE)
 library(nome_do_pacote)
 
 5. No CRAN Task View é possível encontrar pacotes úteis agrupados por área de conhecimento.
 Para Ciências Sociais, acesse: https://cran.r-project.org/web/views/SocialSciences.html
-
-
 
 
 
