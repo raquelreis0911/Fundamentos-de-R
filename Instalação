@@ -13,7 +13,7 @@ Siga os passos em: https://www.vivaolinux.com.br/dica/Instalando-o-R-e-Rstudio-n
 
 http://leg.ufpr.br/~fernandomayer/aulas/ce083-2016-2/R-instalacao.html
 
-::::INTERFACE::::
+::::INTERFACE DO R::::
 
 Script: área para digitar os scripts livremente. CLique em 'run' para executar.
 
@@ -45,13 +45,11 @@ Os pacotes mais populares são:
   - Foreign: para importar dados de outras ferramentas como SAS, SPSS, etc.);
   - Ggplot: para visualização de dados.
 
-Todos os pacotes estão disponíveis no CRAN (vá em Packages): https://cran.r-project.org/ 
+A grande maioria dos pacotes estão disponíveis no CRAN (vá em Packages): https://cran.r-project.org/ 
 
 Como instalar os packages?
 
 1. Instalação por linha de comando: 
-
-Digite o código: 
 
 install.packages("nome_do_pacote", dependencies = TRUE)
 
@@ -83,10 +81,13 @@ Para mais: https://github.com/fernandomayer/R-pacotes-rautu/blob/master/R_gerenc
 
 library(nome_do_pacote)
 
-EM RESUMO...
+4. Em resumo:
 
 install.packages("nome_do_pacote")
 library(nome_do_pacote)
+
+5. No CRAN Task View é possível encontrar pacotes úteis agrupados por área de conhecimento.
+Para Ciências Sociais, acesse: https://cran.r-project.org/web/views/SocialSciences.html
 
 
 
