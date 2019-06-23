@@ -169,6 +169,19 @@ nome_do_dataframe['nome_da_coluna']
 N objetos diferentes, em sequência, de classes diferentes. É como a linha de um banco de dados.
 Pode abrigar, inclusive, data frames dentro de si.
 
+::::IMPORTANDO DADOS::::
+
+##Para carregar manualmente vá em: File > Import Dataset
+
+##Para carregar planilhas de Excel, use o pacote xlsx
+
+install.packages("xlsx")
+library(xlsx)
+nome_do_dataframe <- read.xlsx(file.choose(), sheetIndex =1)
+
+
+
+
 
 
 
