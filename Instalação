@@ -83,6 +83,13 @@ Para mais: https://github.com/fernandomayer/R-pacotes-rautu/blob/master/R_gerenc
 
 library(nome_do_pacote)
 
+EM RESUMO...
+
+install.packages("nome_do_pacote")
+library(nome_do_pacote)
+
+
+
 
 
 
