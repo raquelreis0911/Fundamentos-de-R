@@ -3,7 +3,15 @@ Instale o R Studio. Download em: https://www.rstudio.com/products/rstudio/downlo
 
 ::::NO LINUX/UBUNTU::::
 
-Siga os passos em: https://www.vivaolinux.com.br/dica/Instalando-o-R-e-Rstudio-no-Ubuntu
+Insira no terminal (Crtrl+Alt+t)
+
+sudo apt-get install r-base r-base-core
+
+sudo apt-get install r-cran-littler
+
+Siga os passos em: https://www.vivaolinux.com.br/dica/Instalando-o-R-e-Rstudio-no-Ubuntu ou
+
+http://leg.ufpr.br/~fernandomayer/aulas/ce083-2016-2/R-instalacao.html
 
 ::::INTERFACE::::
 
